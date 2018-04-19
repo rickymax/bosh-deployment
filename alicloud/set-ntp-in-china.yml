@@ -1,0 +1,4 @@
+---
+- type: replace
+  path: /instance_groups/name=bosh/properties/ntp?
+  value: [server 0.cn.pool.ntp.org, server 1.cn.pool.ntp.org, server 2.cn.pool.ntp.org, server 3.cn.pool.ntp.org]
