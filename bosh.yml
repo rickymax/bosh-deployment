@@ -141,10 +141,6 @@ variables:
   type: password
 - name: postgres_password
   type: password
-- name: prometheus_bosh_secret
-  type: password
-- name: wise_rabbitmq_secret
-  type: password
 
 - name: default_ca
   type: certificate
