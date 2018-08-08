@@ -27,7 +27,8 @@ networks:
   - range: ((internal_cidr))
     gateway: ((internal_gw))
     static: [((internal_ip))]
-    dns: [8.8.8.8]
+    dns: ((dns))
+    #dns: [8.8.8.8]
 
 instance_groups:
 - name: bosh
@@ -110,11 +111,11 @@ instance_groups:
         password: ((hm_password))
         ca_cert: ((director_ssl.ca))
       resurrector_enabled: true
-    ntp: &ntp
-    - time1.google.com
-    - time2.google.com
-    - time3.google.com
-    - time4.google.com
+    ntp: &ntp ((ntp))
+    #- time1.google.com
+    #- time2.google.com
+    #- time3.google.com
+    #- time4.google.com
     agent:
       mbus: nats://nats:((nats_password))@((internal_ip)):4222
 

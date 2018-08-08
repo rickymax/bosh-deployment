@@ -25,5 +25,7 @@ bosh create-env /opt/spacex/workspaces/bosh-deployment/bosh.yml \
     -v openstack_domain=default \
     -v openstack_project=WISE-PaaS \
     -v private_key=bosh.pem \
-    -v region=RegionOne
+    -v region=RegionOne \
+    -v dns=[<DNS>] \
+    -v ntp=[<NTP>]
 ```
