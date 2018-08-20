@@ -9,8 +9,8 @@ bosh create-env /opt/spacex/workspaces/bosh-deployment/bosh.yml \
     -o /opt/spacex/workspaces/bosh-deployment/openstack/cpi.yml \
     -o /opt/spacex/workspaces/bosh-deployment/uaa.yml \
     -o /opt/spacex/workspaces/bosh-deployment/openstack/keystone-v2.yml \
-    -o /opt/spacex/workspaces/bosh-deployment/custom/add-bosh-uaa-clients.yml \
-    -o /opt/spacex/workspaces/bosh-deployment/custom/ignore-server-availability-zone.yml \
+    -o /opt/spacex/workspaces/bosh-deployment/openstack/custom/add-bosh-uaa-clients.yml \
+    -o /opt/spacex/workspaces/bosh-deployment/openstack/custom/ignore-server-availability-zone.yml \
     -v director_name=x-bosh \
     -v internal_cidr=10.0.0.0/20 \
     -v internal_gw=10.0.0.1 \
