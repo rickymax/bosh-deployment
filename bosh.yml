@@ -134,11 +134,11 @@ instance_groups:
         password: ((hm_password))
         ca_cert: ((director_ssl.ca))
       resurrector_enabled: true
-    ntp: &ntp
-    - time1.google.com
-    - time2.google.com
-    - time3.google.com
-    - time4.google.com
+    ntp: &ntp ((ntp))
+    #- time1.google.com
+    #- time2.google.com
+    #- time3.google.com
+    #- time4.google.com
 
 cloud_provider:
   mbus: https://mbus:((mbus_bootstrap_password))@((internal_ip)):6868
