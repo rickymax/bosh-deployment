@@ -4,11 +4,11 @@ name: bosh
 releases:
 - name: bosh
   version: "266.4.0"
-  url: https://s3.amazonaws.com/bosh-compiled-release-tarballs/bosh-266.4.0-ubuntu-trusty-3586.24-20180621-165809-30266228-20180621165813.tgz?versionId=inkSsUYxrlYaflh19kcwA7kYkF3eAHLh
+  url: file:///opt/spacex/wise-bosh/bosh-266.4.0-ubuntu-trusty-3586.24-20180621-165809-30266228-20180621165813.tgz
   sha1: 79ba3bdc160faff121e56ee5fd5f618ea48023ce
 - name: bpm
   version: "0.6.0"
-  url: https://s3.amazonaws.com/bosh-compiled-release-tarballs/bpm-0.6.0-ubuntu-trusty-3586.24-20180618-221823-499813904-20180618221841.tgz?versionId=4XxS3rY2PTiCJK2xTUTjLyS5Puk4ZKbX
+  url: file:///opt/spacex/wise-bosh/bpm-0.6.0-ubuntu-trusty-3586.24-20180618-221823-499813904-20180618221841.tgz
   sha1: 60bc10eb7f78b10e54c08913ca1820014562f51c
 
 resource_pools:
