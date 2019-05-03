@@ -30,8 +30,6 @@
 ## Ops files
 
 - `bosh.yml`: Base manifest that is meant to be used with different CPI configurations
-- `[aws|azure|docker|gcp|openstack|softlayer|vcloud|vsphere|virtualbox]/cpi.yml`: CPI configuration
-- `[aws|azure|docker|gcp|openstack|softlayer|vcloud|vsphere|virtualbox]/cloud-config.yml`: Simple cloud configs
 - `[alicloud|aws|azure|docker|gcp|openstack|softlayer|vcloud|vsphere|virtualbox]/cpi.yml`: CPI configuration
 - `[alicloud|aws|azure|docker|gcp|openstack|softlayer|vcloud|vsphere|virtualbox]/cloud-config.yml`: Simple cloud configs
 - `jumpbox-user.yml`: Adds user `jumpbox` for SSH-ing into the Director (see [Jumpbox User](docs/jumpbox-user.md))
@@ -43,6 +41,7 @@
 - `misc/config-server.yml`: Deploys config-server (see `credhub.yml`)
 - `misc/proxy.yml`: Configure HTTP proxy for Director and CPI
 - `runtime-configs/syslog.yml`: Runtime config to enable syslog forwarding
+- `experimental/remove-registry.yml`: Remove the registry for compatible director/CPI/stemcell versions.
 
 See [tests/run-checks.sh](tests/run-checks.sh) for example usage of different ops files.
 
